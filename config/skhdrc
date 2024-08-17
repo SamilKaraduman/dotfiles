@@ -1,0 +1,20 @@
+# Float / Unfloat window
+ctrl - space : yabai -m window --toggle float
+
+# Toggle floating/bsp
+ctrl - h         : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "float" else "bsp" end')
+ctrl - o         : yabai -m config focus_follows_mouse autofocus
+ctrl - p         : yabai -m config focus_follows_mouse off
+
+# Quickly restart yabai
+ctrl + alt + cmd - r : yabai --restart-service
+
+cmd - return : ps aux | grep -v grep | grep -q "Alacritty" && echo "Alacritty is running" && alacritty msg create-window || echo "Alacritty is not running" && open -a Alacritty
+
+# Quickly stop yabai
+ctrl + alt + cmd - y : yabai --stop-service
+
+# Quickly start yabai 
+ctrl + alt + cmd - x: yabai --start-service
+
+

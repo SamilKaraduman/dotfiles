@@ -1,7 +1,0 @@
-# Float / Unfloat window
-ctrl - space : yabai -m window --toggle float
-
-# Toggle floating/bsp
-ctrl - h         : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "float" else "bsp" end')
-ctrl - o         : yabai -m config focus_follows_mouse autofocus
-ctrl - p         : yabai -m config focus_follows_mouse off
