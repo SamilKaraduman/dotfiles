@@ -1,56 +1,26 @@
-[colors.bright]
-black = "0x575268"
-blue = "0x96CDFB"
-cyan = "0xA1EFD3"
-green = "0xABE9B3"
-magenta = "0xDDB6F2"
-red = "0xF28FAD"
-white = "0xF5E0DC"
-yellow = "0xFAE3B0"
+import = [
+"~/.config/alacritty/themes/themes/coolnight.toml"
+]
 
-[colors.normal]
-black = "0x302D41"
-blue = "0x96CDFB"
-cyan = "0xA1EFD3"
-green = "0xABE9B3"
-magenta = "0xDDB6F2"
-red = "0xF28FAD"
-white = "0xD9E0EE"
-yellow = "0xFAE3B0"
 
-[colors.primary]
-background = "0x141414"
-foreground = "0xdadada"
-
-[font]
-size = 14.0
-
-[font.bold]
-family = "JetBrains Mono"
-style = "Bold"
-
-[font.normal]
-family = "JetBrains Mono"
-style = "Medium"
-
-[selection]
-save_to_clipboard = true
+[env]
+TERM = "xterm-256color"
 
 [window]
-blur = true
+padding.x = 10
+padding.y = 10
+
 decorations = "Buttonless"
-opacity = 0.60
 
-[window.dimensions]
-columns = 80
-lines = 24
+opacity = 0.7
+blur = true
 
-[window.padding]
-x = 10
-y = 10
+option_as_alt = "Both"
 
-[scrolling]
-history = 0
+[font]
+normal.family = "MesloLGS Nerd Font Mono"
+
+size = 14
 
 
 
