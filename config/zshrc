@@ -15,6 +15,8 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 alias vi='nvim'
 alias vim='nvim'
+alias grep='ripgrep'
+alias find='fd'
 
 # history setup
 HISTFILE=$HOME/.zhistory
@@ -40,9 +42,12 @@ alias ls="eza --icons=always"
 # ---- Zoxide (better cd) ----
 eval "$(zoxide init zsh)"
 
-# ---- Zoxide (better cd) ----
-eval "$(zoxide init zsh)"
 
 alias cd="z"
 
 touch ~/.hushlogin
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+
