@@ -9,9 +9,8 @@ ctrl - p         : yabai -m config focus_follows_mouse off
 # Quickly restart yabai
 ctrl + alt + cmd - r : yabai --restart-service
 
+# Launch Alacritty
 cmd - return : ps aux | grep -v grep | grep -q "Alacritty" && echo "Alacritty is running" && alacritty msg create-window || echo "Alacritty is not running" && open -a Alacritty
-
-
 
 # Quickly stop yabai
 ctrl + alt + cmd - y : yabai --stop-service
@@ -20,26 +19,20 @@ ctrl + alt + cmd - y : yabai --stop-service
 ctrl + alt + cmd - x: yabai --start-service
 
 # Switch to workspace 1
-ctrl - 1 : yabai -m space --focus 1
-
+ctrl - 1 : echo "Switching to workspace 1" && yabai -m space --focus 1
 # Switch to workspace 2
-ctrl - 2 : yabai -m space --focus 2
-
+ctrl - 2 : echo "Switching to workspace 2" && yabai -m space --focus 2
 # Switch to workspace 3
-ctrl - 3 : yabai -m space --focus 3
-
+ctrl - 3 : echo "Switching to workspace 3" && yabai -m space --focus 3
 # Switch to workspace 4
-ctrl - 4 : yabai -m space --focus 4
-
+ctrl - 4 : echo "Switching to workspace 4" && yabai -m space --focus 4
 # Switch to workspace 5
-ctrl - 5 : yabai -m space --focus 5
-
+ctrl - 5 : echo "Switching to workspace 5" && yabai -m space --focus 5
+# Switch to workspace 6 
+ctrl - 6 : echo "Switching to workspace 6" && yabai -m space --focus 6
 
 ctrl + alt + cmd - l : /Users/samilkaraduman/download_audio_from_clipboard.sh
 ctrl + alt + cmd - m : /Users/samilkaraduman/download_video.sh
-
-
-
 
 
 

@@ -1,26 +1,19 @@
-import = [
-"~/.config/alacritty/themes/themes/coolnight.toml"
-]
-
-
-[env]
-TERM = "xterm-256color"
-
 [window]
-padding.x = 10
-padding.y = 10
-
-decorations = "Buttonless"
-
-opacity = 0.7
+opacity = 0.95
 blur = true
-
-option_as_alt = "Both"
+decorations = "None"  # Optional: removes macOS title bar for a cleaner look
 
 [font]
-normal.family = "MesloLGS Nerd Font Mono"
+size = 15.0
 
-size = 14
+[font.normal]
+family = "Menlo"
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[general]
+live_config_reload = false
 
 
 
